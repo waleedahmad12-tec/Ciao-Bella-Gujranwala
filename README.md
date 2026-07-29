@@ -36,7 +36,8 @@ Ciao-Bella-Gujranwala/
 
 
 ## 📸 Screenshots
-<img width="924" height="489" alt="image" src="https://github.com/user-attachments/assets/d8891527-55c7-42c6-b110-032d36202fec" />
+<img width="1871" height="994" alt="Screenshot 2026-07-29 110209" src="https://github.com/user-attachments/assets/4cce1471-a3cf-423c-833a-27b786233261" />
+
 
 👨‍💻 Author
 
