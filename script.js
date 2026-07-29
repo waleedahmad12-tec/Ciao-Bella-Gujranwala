@@ -1,20 +1,14 @@
-/* ==========================================================================
-   CIAO BELLA — script.js
-   Handles: loader, mobile nav, sticky menu search, favorites, cart sidebar,
-   FAQ accordion, table booking + contact + newsletter forms, scroll-to-top.
-   ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- Loader ---------- */
   const loader = document.getElementById('loader');
   window.addEventListener('load', () => {
     if (loader) loader.classList.add('hide');
   });
-  // Fallback in case the load event already fired
+
   setTimeout(() => { if (loader) loader.classList.add('hide'); }, 1200);
 
-  /* ---------- Toast helper ---------- */
+
   function showToast(message){
     let toast = document.querySelector('.toast');
     if (!toast){
@@ -28,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     toast._timer = setTimeout(() => toast.classList.remove('show'), 2600);
   }
 
-  /* ---------- Mobile nav toggle ---------- */
   const menuToggle = document.getElementById('menu-toggle');
   const navbar = document.querySelector('.navbar');
   if (menuToggle && navbar){
@@ -40,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Menu search filter ---------- */
+
   const searchInput = document.getElementById('searchInput');
   const menuCards = Array.from(document.querySelectorAll('.menu-card'));
   if (searchInput){
@@ -53,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Favorites (heart toggle) ---------- */
+
   document.querySelectorAll('.favorite').forEach(fav => {
     fav.addEventListener('click', () => {
       fav.classList.toggle('active');
@@ -61,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Cart ---------- */
+
   const cart = [];
   const cartIcon = document.getElementById('cartIcon');
   const cartCountEl = document.getElementById('cartCount');
@@ -70,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const shoppingCart = document.getElementById('shoppingCart');
   const closeCartBtn = document.getElementById('closeCart');
 
-  // Overlay for closing the cart by clicking outside it
+
   let cartOverlay = document.querySelector('.cart-overlay');
   if (!cartOverlay){
     cartOverlay = document.createElement('div');
@@ -149,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderCart();
 
-  /* ---------- FAQ accordion ---------- */
+
   document.querySelectorAll('.help-item').forEach(item => {
     const question = item.querySelector('.help-question');
     question?.addEventListener('click', () => {
@@ -159,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Table booking form ---------- */
+
   const bookingForm = document.getElementById('bookingForm');
   bookingForm?.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -168,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bookingForm.reset();
   });
 
-  /* ---------- Contact form ---------- */
+
   const contactForm = document.getElementById('contactForm');
   contactForm?.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -176,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.reset();
   });
 
-  /* ---------- Newsletter form ---------- */
+
   const newsletterForm = document.querySelector('.newsletter-form');
   newsletterForm?.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -184,7 +177,22 @@ document.addEventListener('DOMContentLoaded', () => {
     newsletterForm.reset();
   });
 
-  /* ---------- Scroll to top ---------- */
+
+
+
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (event) => {
+      const id = link.getAttribute('href').slice(1);
+      let target = document.getElementById(id);
+      if (!target && id === 'contact') target = document.getElementById('contact-us');
+      if (target){
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+
   const topBtn = document.getElementById('topBtn');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 500){
