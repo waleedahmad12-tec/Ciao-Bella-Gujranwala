@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciao Bella | Gujranwala</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="icon" type="images/jpg" href="images/logo.jpg">
+</head>
+<body>
+    
+<div id="loader">
+    <div class="food-loader"></div>
+
+</div>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+    <img src="images/logo.jpg" alt="Ciao Bella">
+
+    <h2>Ciao Bella | Gujranwala</h2>
+</div>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="cart-icon" id="cartIcon">
+    🛒 <span id="cartCount">0</span>
+</div>
+    <div class="menu-toggle" id="menu-toggle">
+    ☰
+</div>
+
+</header>
+<!-- HOME -->
+<section class="home" id="home "></section>
+<div class="home-content">
+    <h2>
+        Fresh Taste, Every Bite!
+    </h2>
+    <h3>
+        Welcome to Ciao Bella Gujranwala
+    </h3>
+    <p>
+        Serving delicious pizzas, juicy burgers, crispy fries,
+        loaded sandwiches, pasta and refreshing drinks.
+        Taste the difference today!
+    </p>
+
+        <a href="#menu" class="btn">View Menu</a>
+
+        <a href="#contact" class="btn btn-outline">Order Online</a>
+</div>
+<!-- ABOUT -->
+<section class="about" id="about" data-aos="fade-up">
+    <div class="about-image">
+        <img src="images/About.jpg" alt="Coffee Shop">
+    </div>
+
+    <div class="about-content">
+
+        <h2>About Ciao Bella</h2>
+
+        <p>
+            Ciao Bella is one of Gujranwala's favorite fast food restaurants,
+            serving freshly prepared pizzas, burgers, wraps, sandwiches,
+            loaded fries and refreshing beverages.
+        </p>
+
+        <p>
+          Serve fresh food with premium ingredients,
+          excellent customer service and unforgettable taste.
+        </p>
+
+        <a href="#contact" class="btn">Learn More</a>
+
+    </div>
+
+</section>
+<!-- MENU -->
+<section class="menu" id="menu" data-aos="fade-up">
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Pizza, Burger, Fries...">
+    </div>
+
+    <h2 class="section-title">Our Delicious Menu</h2>
+
+    <div class="menu-container">
+
+        <!-- Food Card 1 -->
+        <div class="menu-card">
+            <img src="images/menu3.jpg" alt="Chicken Fajita Pizza">
+
+            <span class="favorite">🤍</span>
+
+            <h3>Chicken Fajita Pizza</h3>
+            <p>Loaded with mozzarella cheese, grilled chicken & fresh vegetables.</p>
+
+            <span class="price">Rs. 1890</span><br><br>
+
+            <div class="menu-buttons">
+                <button
+                    class="btn add-cart"
+                    data-name="Chicken Fajita Pizza"
+                    data-price="1890">
+                    Add to Cart
+                </button>
+
+                <a href="#contact" class="btn btn-outline">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Food Card 2 -->
+        <div class="menu-card">
+            <img src="images/menu1.jpg" alt="Zinger Burger">
+
+            <span class="favorite">🤍</span>
+
+            <h3>Zinger Burger</h3>
+            <p>Crispy chicken fillet with cheese, lettuce & special sauce.</p>
+
+            <span class="price">Rs. 850</span><br><br>
+
+            <div class="menu-buttons">
+                <button
+                    class="btn add-cart"
+                    data-name="Zinger Burger"
+                    data-price="850">
+                    Add to Cart
+                </button>
+
+                <a href="#contact" class="btn btn-outline">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Food Card 3 -->
+        <div class="menu-card">
+            <img src="images/menu2.jpeg" alt="Loaded Fries">
+
+            <span class="favorite">🤍</span>
+
+            <h3>Loaded Fries</h3>
+            <p>Crispy fries topped with cheese, chicken & signature sauces.</p>
+
+            <span class="price">Rs. 690</span><br><br>
+
+            <div class="menu-buttons">
+                <button
+                    class="btn add-cart"
+                    data-name="Loaded Fries"
+                    data-price="690">
+                    Add to Cart
+                </button>
+
+                <a href="#contact" class="btn btn-outline">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Food Card 4 -->
+        <div class="menu-card">
+            <img src="images/menu4.jpg" alt="Alfredo Pasta">
+
+            <span class="favorite">🤍</span>
+
+            <h3>Creamy Alfredo Pasta</h3>
+            <p>Rich creamy pasta with grilled chicken and parmesan cheese.</p>
+
+            <span class="price">Rs. 1290</span><br><br>
+
+            <div class="menu-buttons">
+                <button
+                    class="btn add-cart"
+                    data-name="Creamy Alfredo Pasta"
+                    data-price="1290">
+                    Add to Cart
+                </button>
+
+                <a href="#contact" class="btn btn-outline">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Food Card 5 -->
+        <div class="menu-card">
+            <img src="images/menu5.jpg" alt="Chicken Wrap">
+
+            <span class="favorite">🤍</span>
+
+            <h3>Grilled Chicken Wrap</h3>
+            <p>Fresh tortilla filled with grilled chicken, veggies & garlic sauce.</p>
+
+            <span class="price">Rs. 750</span><br><br>
+
+            <div class="menu-buttons">
+                <button
+                    class="btn add-cart"
+                    data-name="Grilled Chicken Wrap"
+                    data-price="750">
+                    Add to Cart
+                </button>
+
+                <a href="#contact" class="btn btn-outline">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Food Card 6 -->
+        <div class="menu-card">
+            <img src="images/menu6.jpg" alt="Mint Margarita">
+
+            <span class="favorite">🤍</span>
+
+            <h3>Mint Margarita</h3>
+            <p>Refreshing mint drink with lemon and crushed ice.</p>
+
+            <span class="price">Rs. 350</span><br><br>
+
+            <div class="menu-buttons">
+                <button
+                    class="btn add-cart"
+                    data-name="Mint Margarita"
+                    data-price="350">
+                    Add to Cart
+                </button>
+
+                <a href="#contact" class="btn btn-outline">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- SERVICES -->
+<section class="services" id="services" data-aos="fade-right">
+    <h2 class="section-title">Why Choose Ciao Bella?</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-icon">🍕</div>
+            <h3>Fresh Ingredients</h3>
+            <p>We prepare every meal using fresh vegetables, premium cheese, and high-quality ingredients.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">👨‍🍳</div>
+            <h3>Expert Chefs</h3>
+            <p>Our experienced chefs cook every pizza, burger, and pasta with passion and perfection.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Get your favorite meals delivered hot and fresh to your doorstep across Gujranwala.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🍔</div>
+            <h3>Delicious Fast Food</h3>
+            <p>Enjoy a wide variety of pizzas, burgers, wraps, fries, pasta, and refreshing drinks.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🏠</div>
+            <h3>Family Friendly</h3>
+            <p>Relax in a clean, comfortable, and family-friendly environment with exceptional service.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💳</div>
+            <h3>Easy Payment</h3>
+            <p>Pay conveniently with cash, card, or digital payment options for a hassle-free experience.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🌟 </div>
+    <h3>Premium Quality Ingredients</h3>
+    <p>We source only the finest, farm-fresh ingredients to bring authentic flavors straight to your plate.</p>
+    </div>
+
+    <div class="service-card">
+        <div class="service-icon">🍽️</div>
+        <h3>Clean & Family-Friendly Environment</h3>
+        <p>Enjoy delicious meals in our exceptionally clean, cozy, and family-friendly dining space.</p>
+        </div>
+    </div>
+</section>
+<!-- TODAYS SPECIAL  -->
+<section class="today-special" id="today-special">
+
+    <div class="special-container">
+
+        <div class="special-image">
+
+            <img src="images/special.jpg" alt="Today's Special Pizza">
+
+        </div>
+
+        <div class="special-content">
+
+            <span class="special-badge">Today's Special</span>
+
+            <h2>Chicken Fajita Pizza</h2>
+
+            <p>
+                Freshly baked with premium mozzarella cheese,
+                grilled chicken, colorful vegetables, and our
+                signature Ciao Bella pizza sauce. Enjoy today's
+                special with an exclusive discount.
+            </p>
+
+            <h3>Rs. 1,899 <span>Rs. 2,299</span></h3>
+
+            <a href="#contact" class="btn order-now">Order Now</a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- DEALS -->
+<section class="deals" id="deals">
+
+    <h2 class="section-title">Hot Deals & Offers</h2>
+
+    <div class="deals-container">
+
+        <div class="deal-card">
+            <h3>🍕 Buy 1 Get 1 Free</h3>
+            <p>Every Tuesday on all Large Pizzas. Share the flavor with your friends and family!</p>
+        </div>
+
+        <div class="deal-card">
+            <h3>👨‍🎓 Student Deal</h3>
+            <p>Show your valid Student ID and get 15% OFF on your total bill.</p>
+        </div>
+
+        <div class="deal-card">
+            <h3>🎉 Family Combo</h3>
+            <p>Enjoy 2 Large Pizzas, 4 Drinks & Loaded Fries at a special combo price.</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- POPULAR DISH -->
+<section class="popular-dishes" id="popular-dishes">
+    <h2 class="section-title">Our Most Popular Dishes</h2>
+    <div class="popular-container">
+        <div class="popular-card">
+            <span class="popular-badge">Best Seller</span>
+            <img src="images/fajita.jpg" alt="Chicken Fajita Pizza">
+            <h3>Chicken Fajita Pizza</h3>
+            <p>Loaded with grilled chicken, mozzarella cheese, and fresh vegetables.</p>
+            <span class="price">Rs. 1,899</span>
+        </div>
+
+        <div class="popular-card">
+            <span class="popular-badge">Customer Favorite</span>
+            <img src="images/zinger.jpg" alt="Zinger Burger">
+            <h3>Zinger Burger</h3>
+            <p>Crispy chicken fillet with fresh lettuce, cheese, and our special sauce.</p>
+            <span class="price">Rs. 850</span>
+        </div>
+
+        <div class="popular-card">
+            <span class="popular-badge">Top Rated</span>
+            <img src="images/loaded.jpg" alt="Loaded Fries">
+            <h3>Loaded Fries</h3>
+            <p>Crispy fries topped with melted cheese, chicken, and signature sauces.</p>
+            <span class="price">Rs. 690</span>
+        </div>
+    </div>
+
+</section>
+<!-- GALLERY -->
+<section class="food-gallery" id="food-gallery" data-aos="zoom-in">
+    <h2 class="section-title">Our Food Gallery</h2>
+    <div class="food-gallery-container">
+        <div class="food-gallery-item">
+            <img src="images/fajita.jpg" alt="Chicken Fajita Pizza">
+        </div>
+
+        <div class="food-gallery-item">
+            <img src="images/zinger.jpg" alt="Zinger Burger">
+        </div>
+
+        <div class="food-gallery-item">
+            <img src="images/loaded.jpg" alt="Loaded Fries">
+        </div>
+
+        <div class="food-gallery-item">
+            <img src="images/menu4.jpg" alt="Creamy Alfredo Pasta">
+        </div>
+
+        <div class="food-gallery-item">
+            <img src="images/About.jpg" alt="Family Dining Area">
+        </div>
+
+        <div class="food-gallery-item">
+            <img src="images/reasturant.jpg" alt="Ciao Bella Restaurant">
+        </div>
+    </div>
+
+</section>
+<!-- TABLE BOOK -->
+<section class="table-booking" id="table-booking">
+    <h2 class="section-title">Book Your Table</h2>
+    <p class="booking-text">
+        Reserve your table in advance and enjoy delicious food with your family and friends.
+    </p>
+    <form class="booking-form" id="bookingForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input
+            type="tel"
+            id="phone"
+            placeholder="03XXXXXXXXX"
+            pattern="[0-9]{11}"
+            maxlength="11"
+            required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <select id="persons" required>
+            <option value="">Select Guests</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5+ Guests</option>
+        </select>
+        <button type="submit" class="btn">
+            Reserve Now
+        </button>
+    </form>
+</section>
+<!-- CONTACT US  -->
+<section class="contact-us" id="contact-us" data-aos="fade-up">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-wrapper">
+     
+        <div class="contact-details">
+            <h3>Contact Ciao Bella</h3>
+            <p>🍕 We'd love to serve you! Visit our restaurant or contact us for reservations, takeaway, and delivery.</p>
+            <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+            <p><i class="fas fa-envelope"></i> hello@ciaobella.pk</p>
+            <p><i class="fas fa-location-dot"></i> Ciao Bella, Gujranwala, Punjab, Pakistan</p>
+            <p><strong>🕒 Opening Hours:</strong> Monday – Sunday | 12:00 PM – 12:00 AM</p>
+        </div>
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Phone Number">
+                <textarea rows="6" placeholder="Write Your Message"></textarea>
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- QUESTION -->
+<section class="help-center" id="help-center">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="help-container">
+        <div class="help-item">
+            <button class="help-question">
+                What are your opening hours?
+            </button>
+            <div class="help-answer">
+                <p>We are open every day from 12:00 PM to 11:00 PM.</p>
+            </div>
+        </div>
+
+        <div class="help-item">
+            <button class="help-question">
+                Do you offer takeaway and delivery?
+            </button>
+            <div class="help-answer">
+                <p>Yes! We provide both takeaway and home delivery services.</p>
+            </div>
+        </div>
+
+        <div class="help-item">
+            <button class="help-question">
+                Can I reserve a table online?
+            </button>
+            <div class="help-answer">
+                <p>Yes, you can reserve your table through our booking section.</p>
+            </div>
+        </div>
+
+        <div class="help-item">
+            <button class="help-question">
+                Do you accept online payments?
+            </button>
+            <div class="help-answer">
+                <p>Yes, we accept cash, debit cards, and online payment methods.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- PROMISE -->
+<section class="our-promise" id="our-promise">
+    <div class="promise-container">
+        <h2>Why Choose Ciao Bella?</h2>
+        <p>
+            At Ciao Bella, we are passionate about serving delicious food
+            made with fresh ingredients and exceptional quality. Every meal
+            is prepared with care to give you an unforgettable dining experience.
+        </p>
+        <div class="promise-features">
+            <div class="promise-item">
+                🍕 Freshly Prepared Meals
+            </div>
+
+            <div class="promise-item">
+                👨‍🍳 Experienced Chefs
+            </div>
+
+            <div class="promise-item">
+                🚚 Fast & Reliable Delivery
+            </div>
+
+            <div class="promise-item">
+                ❤️ Great Taste & Quality
+            </div>
+
+        </div>
+        <a href="#menu" class="btn">
+            Explore Our Menu
+        </a>
+    </div>
+</section>
+<!-- FOOTER  -->
+<footer class="site-footer" data-aos="fade-up">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h2><i class="fas fa-pizza-slice"></i> Ciao Bella</h2>
+            <p>
+                Serving fresh pizzas, juicy burgers, delicious pasta,
+                and unforgettable flavors in Gujranwala.
+            </p>
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#food-gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#table-booking">Book Table</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p><i class="fas fa-location-dot"></i> Gujranwala, Punjab, Pakistan</p>
+            <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+            <p><i class="fas fa-envelope"></i> hello@ciaobella.com</p>
+            <p><i class="fas fa-clock"></i> Mon - Sun | 12:00 PM - 11:00 PM</p>
+        </div>
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                <a href="#"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+                <a href="#"><i class="fab fa-youtube"></i><span>YouTube</span></a>
+            </div>
+        </div>
+    </div>
+ <button id="topBtn" title="Go to Top">  ↑
+</button>
+<section class="newsletter" data-aos="fade-up">
+    <div class="newsletter-content">
+        <h2>Subscribe for Special Deals</h2>
+        <p>
+            Get the latest offers, new menu updates,
+            and exclusive discounts directly in your inbox.
+        </p>
+        <form class="newsletter-form">
+            <input
+                type="email"
+                placeholder="Enter Your Email"
+                required>
+            <button type="submit">
+                Subscribe
+            </button>
+        </form>
+    </div>
+</section>
+<div class="footer-bottom">
+    <p>© 2026 Ciao Bella. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- CART -->
+<div class="shopping-cart" id="shoppingCart">
+    <div class="cart-header">
+        <h2>Your Order</h2>
+        <span id="closeCart">&times;</span>
+    </div>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+        <h3>Total: Rs. <span id="cartTotal">0</span></h3>
+        <button class="btn">Checkout</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>   
+</body>
+</html>
